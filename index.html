@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="view-time">View Time of Different places</h1>
+    <div class="timezone-selector">
+        <label for="timezone">Select a Time Zone:</label>
+        <select id="timezone" onchange="timezones()">
+          <option value="UTC">UTC</option>
+          <option value="America/New_York">America/New_York</option>
+          <option value="America/Los_Angeles">America/Los_Angeles</option>
+          <option value="Europe/London">Europe/London</option>
+          <option value="Asia/Tokyo">Asia/Tokyo</option>
+        </select>
+    </div>
+    <div class="background">
+        <img id="backgroundImage" src="https://wallpapers.com/images/featured/nature-2ygv7ssy2k0lxlzu.jpg" alt="Daytime Background">
+        <h2>Digital Clock</h2>
+        <div class="digi-clock">
+            <div>
+                <span id="hours">00</span>
+                <span class="text">Hours</span>
+            </div>
+            <div>
+                <span id="minutes">00</span>
+                <span class="text">Minutes</span>
+            </div>
+            <div>
+                <span id="seconds">00</span>
+                <span class="text">Seconds</span>
+            </div>
+            <div>
+                <span id="ampm">AM</span>
+            </div>
+        </div>
+    </div>
+    <div class="greeting">
+        <p id="greetingText">Loading....</p>
+    </div>
+    
+    <p id="Ustime"></p>
+    <script src="script.js"></script>
+</body>
+</html>

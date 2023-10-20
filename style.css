@@ -1,0 +1,91 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+}
+h2{
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    position: absolute;
+    margin-top: -60px;
+    margin-left: 80px;
+    color: black;
+    z-index: 10;
+}
+.digi-clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.digi-clock div{
+    margin: 5px;
+    text-align: center;
+    position: relative;
+}
+.digi-clock span{
+    width: 120px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color:darkviolet;
+    border: 2px solid white;
+    font-size: 50px;
+}
+.digi-clock .text{
+    height: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color:darkred;
+}
+.digi-clock #ampm{
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    top: 25px;
+    font-size: 17px;
+    background-color: darkgreen;
+}
+#backgroundImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: background-image 1s;
+}
+.greeting{
+    position: absolute;
+    margin-top: 300px;
+    color:black;
+    z-index: 10;
+}
+#greetingText{
+    font-size: 30px;
+    font-weight: bold;
+    background-color:bisque;
+    border: 2px solid palegreen;
+    padding: 5px;
+}
+.timezone-selector{
+    position: absolute;
+    margin-top: 600px;
+    color:black;
+    z-index: 10;
+    background-color:coral;
+    padding: 10px;
+}
+h1{
+    position: absolute;
+    margin-top: 500px;
+    color:black;
+    z-index: 10;
+    background-color: coral;
+    padding: 10px;
+}
